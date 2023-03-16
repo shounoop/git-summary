@@ -54,7 +54,7 @@ Git là một hệ thống quản lý phiên bản phân tán (Distributed Versi
   - Cách dùng: git commit -m ”description”
 
 ## 6. git push/git pull
-  - Tác dụng: Push hoặc Pull các thay đổi đến remote. Nếu bạn đã added và committed các thay đổi và bạn muốn đẩy nó lên hoặc remote của bạn đã update và bạn apply tất cả thay đổi đó trên code của mình.
+  - Tác dụng: Push hoặc Pull các thay đổi đến remote. Nếu bạn đã added và committed các thay đổi và bạn muốn đẩy nó lên remote hoặc remote của bạn đã update và bạn apply tất cả thay đổi đó trên code của mình.
 
   - Cách dùng: 
     + git pull <:remote:> <:branch:>
