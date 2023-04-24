@@ -74,3 +74,37 @@ Here's how to use git cherry-pick:
    the current branch.
 
 #### V. git stash
+
+git stash is a Git command that allows you to save the changes you've made to your working directory in a temporary location, so you can revert back to a clean working directory without losing your changes. It is useful when you are working on a branch but you need to switch to another branch or perform some other Git operation that requires a clean working directory.
+
+Here's how to use git stash:
+
+1. Make changes to your working directory.
+   ```
+   # Make changes to your files
+   ```
+2. Run the git stash command.
+   ```
+   git stash
+   ```
+   This will save your changes to a temporary location and revert your working directory to the last committed state.
+3. Perform the Git operation you need to do.
+   ```
+   # Switch to another branch
+   # Perform another Git operation
+   ```
+4. Retrieve the changes you stashed.
+
+   ```
+   git stash pop
+   ```
+
+   This will apply the changes you stashed back to your working directory. If you have multiple stashes, you can specify the stash you want to apply with git stash apply stash@{n}, where n is the index of the stash.
+
+5. Commit the changes.
+   After retrieving your stashed changes, you can commit them using git commit.
+   ```
+   git commit -m "message"
+   ```
+
+That's it! git stash is a powerful command that can help you save your changes and switch between Git operations without losing your progress
